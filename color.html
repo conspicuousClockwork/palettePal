@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/color.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+</head>
+
+<body onload="init(6)">    
+        <div id="inputArea" >
+            <div class="inputPreview">
+                <h4>Name</h4>
+                <input type="text" name="paletteName" placeholder="palette name" id="paletteName">
+            </div>
+            <div class="button" onclick="removeColor()">Remove Color</div>
+            <div class="button" onclick="addColor()">Add Color</div>
+            <div class="button" onclick="addPalette()">Add Palette</div>
+            <a download="palettes.txt" id="downloadlink">
+                <div class="button" id="downloadBox" style="display:none;">Download</div>
+            </a>
+        </div>
+    <div id="previewArea">
+        <ul id="listOfPalettes">
+        </ul>
+        <div id="previewStage">
+            <h4 id="previewName"></h4>
+        </div>
+    </div>
+</body>
+
+</html>
